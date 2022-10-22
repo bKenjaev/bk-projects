@@ -119,6 +119,7 @@ public class TestCalc {
                         case minus -> {
                             res = rimToArab1 - rimToArab2;
                             if (res < 1) {
+                                System.out.println("Roman numerals do not have the digit 0 and negative values");
                                 throw new IOException();
                             }
                             result = arabToRim(res);
